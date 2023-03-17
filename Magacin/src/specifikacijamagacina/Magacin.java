@@ -12,7 +12,7 @@ public class Magacin implements SpecifikacijaMagacina{
 	Magacin(){
 		artikli = new ArrayList<>();
 	}
-	
+
 	@Override
 	public void addArtikal(Artikal artikal) {
 		if(artikal!=null) {
@@ -40,7 +40,6 @@ public class Magacin implements SpecifikacijaMagacina{
 		}
 		
 		return null;
-		
 	}
 
 }

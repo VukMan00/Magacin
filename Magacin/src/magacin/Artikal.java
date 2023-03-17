@@ -3,6 +3,7 @@ package magacin;
 import java.time.LocalDate;
 
 public abstract class Artikal {
+<<<<<<< HEAD
 
 	private String naziv;
 	private String sifra;
@@ -10,6 +11,13 @@ public abstract class Artikal {
 	private int kolicina;
 	private LocalDate datum;
 
+=======
+	private String naziv;
+	private String sifra;
+	private String opis;
+	private int kolicina;
+	
+>>>>>>> refs/heads/implementacijainterfejsa
 	public String getNaziv() {
 		return naziv;
 	}
