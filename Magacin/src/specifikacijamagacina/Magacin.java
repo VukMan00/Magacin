@@ -1,25 +1,35 @@
 package specifikacijamagacina;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import magacin.Artikal;
 
 public class Magacin implements SpecifikacijaMagacina{
 
+	List<Artikal> artikli;
+	
+	Magacin(){
+		artikli = new ArrayList<>();
+	}
 	@Override
 	public void addArtikal(Artikal artikal) {
-		// TODO Auto-generated method stub
-		
+		artikli.add(artikal);
 	}
 
 	@Override
 	public void removeArtikal(Artikal artikal) {
-		// TODO Auto-generated method stub
-		
+		artikli.remove(artikal);
 	}
 
 	@Override
-	public void getArtikal(String sifra) {
-		// TODO Auto-generated method stub
-		
+	public Artikal getArtikal(String sifra) {
+		for(Artikal artikal:artikli) {
+			if(artikal.getSifra().equals(sifra)) {
+				return artikal;
+			}
+		}
+		return null;
 	}
 
 }
