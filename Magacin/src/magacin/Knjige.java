@@ -2,7 +2,7 @@ package magacin;
 
 import java.util.Objects;
 
-public class Knjige{
+public class Knjige extends Artikal{
 	private String naziv;
 	private String sifra;
 	private String opis;

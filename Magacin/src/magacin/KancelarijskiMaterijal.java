@@ -2,7 +2,7 @@ package magacin;
 
 import java.util.Objects;
 
-public class KancelarijskiMaterijal{
+public class KancelarijskiMaterijal extends Artikal{
 	private String naziv;
 	private String sifra;
 	private String opis;

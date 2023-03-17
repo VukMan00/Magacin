@@ -3,7 +3,7 @@ package magacin;
 import java.time.LocalDate;
 import java.util.Objects;
 
-public class KucnaHemija{
+public class KucnaHemija extends Artikal{
 
 	private String naziv;
 	private String sifra;
